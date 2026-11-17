@@ -1,8 +1,25 @@
 # Portfolio
 
-High-level descriptions of systems I have designed and delivered. Each project
-page covers the problem, my exact role, the architecture, how it is tested
-and what it has produced. No source code is published here.
+AI engineering work: high-level descriptions of systems I have designed and
+delivered. Each project page covers the problem, my exact role, the
+architecture, how it is tested and what it has produced. No source code is
+published here.
+
+## What these projects show
+
+- **Building agents:** agent playbooks and five Claude Code skills that take
+  an agent from a plain-language request to a checked result, with human
+  approval gates (all three projects).
+- **Full-stack engineering:** Python back ends, a PostgreSQL data layer,
+  and browser front ends such as request forms, report dashboards and a
+  live quote form (Private Intelligence Platform, skills project).
+- **Agents in deployed systems:** the hosted platform is built so an agent
+  can queue a request on the cloud worker, check its status and report back
+  (Private Intelligence Platform).
+- **Cloud deployment:** the worker image is built and published by GitHub
+  Actions, and the AWS environment is defined in Terraform and was built and
+  rehearsed end to end on a test environment; a quote form is live on
+  GitHub Pages (Private Intelligence Platform, skills project).
 
 ## Projects
 
