@@ -10,6 +10,7 @@ and what it has produced. No source code is published here.
 | --- | --- | --- | --- | --- |
 | [Private Intelligence Platform](projects/private-intelligence-platform/README.md) | Multi-tenant platform that searches, organizes and packages an organization's own email and records, and audits its contracts | Founder, system designer and technical lead; directed an AI coding agent that wrote the code | Python, PostgreSQL, Terraform, AWS, Microsoft Graph, Gmail API, Docker, GitHub Actions | In development; pre-revenue |
 | [Marineland Public Intelligence Platform](projects/marineland-public-intelligence-platform/README.md) | Email records search and production pipeline for public records requests at the Town of Marineland, FL | Contributor: designed and delivered the review-binder, de-duplication and reliability work on a core system built by Blue Dot Fund | Python, Microsoft Graph, AWS, MySQL, pytest | Used for the Town's public records requests in 2026 |
+| [Claude Code Skills for Small Service Businesses](projects/small-business-ai-skills/README.md) | Five reusable Claude Code skills that take a small service business from content discovery to finished videos and online lead capture | Designer of the workflows and rules; directed Claude Code to build the skills, scripts and templates, and reviewed every output | Claude Code skills, Python, ffmpeg, faster-whisper, Google Apps Script, GitHub Pages | Four skills used on a real engagement; one in development |
 
 ## How I build
 
