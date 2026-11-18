@@ -153,8 +153,8 @@ flowchart LR
   and upload sets built from the results.
 - Per the public record (Town Commission minutes, March 19, 2026), the system
   as a whole had processed about 31,000 emails across all Town email
-  addresses and recovered nine meetings from the recording device. These
-  figures cover the system overall, not my later additions.
+  addresses. This figure covers the system overall, not my later
+  additions.
 
 ## 9. What I would build next
 
