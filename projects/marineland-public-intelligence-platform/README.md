@@ -63,27 +63,28 @@ code and tests:
 ## 3. System architecture
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}}}%%
 flowchart LR
-    STAFF["Town staff"] -->|"describes request<br/>in plain language"| AGENT["Coding agent<br/>following the playbook"]
+    STAFF["Town staff"] -->|"describes a<br/>request in<br/>plain words"| AGENT["Coding agent<br/>following<br/>the playbook"]
     AGENT -->|"request file"| SYNC
 
     subgraph Core["Core system (Blue Dot Fund)"]
         SYNC["Mailbox sync"]
-        ARCH[("Email archive")]
-        IDX[("Metadata index")]
-        SEARCH["Keyword search"]
-        PKG["Request package"]
+        ARCH[("Email<br/>archive")]
+        IDX[("Metadata<br/>index")]
+        SEARCH["Keyword<br/>search"]
+        PKG["Request<br/>package"]
     end
 
     subgraph Mine["My additions"]
-        PAR["Parallel sync and<br/>reliability improvements"]
-        BIND["Review binder and<br/>decision log"]
-        DEDUP["De-duplication<br/>(plan, approve, build)"]
-        PROD["Produced Records Binder"]
-        SETS["Review and public<br/>upload sets"]
+        PAR["Parallel<br/>sync and<br/>reliability<br/>fixes"]
+        BIND["Review<br/>binder and<br/>decision log"]
+        DEDUP["Remove<br/>duplicates<br/>(approved<br/>plan)"]
+        PROD["Produced<br/>Records<br/>Binder"]
+        SETS["Review and<br/>public<br/>upload sets"]
     end
 
-    M365["Town Microsoft 365<br/>mailboxes"] --> SYNC
+    M365["Town<br/>Microsoft 365<br/>mailboxes"] --> SYNC
     PAR -.-> SYNC
     SYNC --> ARCH
     SYNC --> IDX
@@ -91,7 +92,7 @@ flowchart LR
     ARCH --> SEARCH
     SEARCH --> PKG
     PKG --> BIND
-    BIND --> REVIEW["Staff and counsel review"]
+    BIND --> REVIEW["Staff and<br/>counsel<br/>review"]
     REVIEW --> DEDUP
     DEDUP --> PROD
     PROD --> SETS

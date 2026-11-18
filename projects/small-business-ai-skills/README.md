@@ -38,21 +38,22 @@ for every client.
 ## 3. System architecture
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}}}%%
 flowchart LR
-    IN["Owner's accounts,<br/>notes and<br/>reference videos"] --> CRR["Content<br/>reference review"]
-    CRR -->|"audit and<br/>first-video pick"| SP["Shoot plan"]
-    CRR -.->|"formats and<br/>patterns"| MCP["Market and content plan<br/>(in development)"]
+    IN["Owner's<br/>accounts,<br/>notes and<br/>reference<br/>videos"] --> CRR["Content<br/>reference<br/>review"]
+    CRR -->|"audit and<br/>first-video<br/>pick"| SP["Shoot plan"]
+    CRR -.->|"formats and<br/>patterns"| MCP["Market and<br/>content plan<br/>(in<br/>development)"]
     MCP -.->|"pillars and<br/>calendar"| SP
-    SP -->|"shot list PDF"| SHOOT["Shoot day"]
-    SHOOT -->|"raw footage"| FTE["Footage to edit"]
-    FTE -->|"review rounds"| OWNER["Owner feedback"]
+    SP -->|"shot list<br/>PDF"| SHOOT["Shoot day"]
+    SHOOT -->|"raw footage"| FTE["Footage<br/>to edit"]
+    FTE -->|"review<br/>rounds"| OWNER["Owner<br/>feedback"]
     OWNER -->|"style guide<br/>updates"| FTE
-    FTE --> POST["Finished videos<br/>for posting"]
-    POST -->|"tagged links"| QFL["Quote form launch"]
-    QFL --> FORM["Live quote form"]
+    FTE --> POST["Finished<br/>videos for<br/>posting"]
+    POST -->|"tagged links"| QFL["Quote form<br/>launch"]
+    QFL --> FORM["Live quote<br/>form"]
     FORM --> SHEET["Request log<br/>and photos"]
-    FORM --> EMAIL["Email to owner"]
-    SHEET -.->|"leads per channel"| MCP
+    FORM --> EMAIL["Email to<br/>owner"]
+    SHEET -.->|"leads per<br/>channel"| MCP
 ```
 
 All client-specific settings (brand colours, fonts, logos, services, contact

@@ -41,29 +41,30 @@ outputs a reviewer can check and approve.
 ## 3. System architecture
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}}}%%
 flowchart LR
     subgraph Client["Client's mail system"]
-        M365["Microsoft 365"]
-        GWS["Google Workspace"]
-        EXP["Mailbox exports<br/>(MBOX, PST, EML)"]
+        M365["Microsoft<br/>365"]
+        GWS["Google<br/>Workspace"]
+        EXP["Mailbox<br/>exports<br/>MBOX, PST,<br/>EML"]
     end
 
     subgraph Tenant["One isolated environment per client"]
-        Q["Job queue and<br/>scheduled sync"]
-        W["Worker<br/>(container, starts on demand)"]
-        S[("Encrypted mail archive")]
+        Q["Job queue,<br/>scheduled<br/>sync"]
+        W["Worker<br/>(container,<br/>starts on<br/>demand)"]
+        S[("Encrypted<br/>mail archive")]
         DB[("Search index<br/>(PostgreSQL)")]
-        B[("Locked backups")]
+        B[("Locked<br/>backups")]
         L["Activity log"]
     end
 
     subgraph Outputs["Outputs for human review"]
-        R["Request packages"]
-        BIN["Review binders and<br/>final copies"]
-        CA["Contract audit,<br/>readiness and handover reports"]
+        R["Request<br/>packages"]
+        BIN["Review<br/>binders and<br/>final copies"]
+        CA["Contract<br/>audit,<br/>readiness,<br/>handover<br/>reports"]
     end
 
-    OP["Operator or<br/>coding agent"] -->|"submits request"| Q
+    OP["Operator or<br/>coding agent"] -->|"submits<br/>request"| Q
     Q --> W
     M365 -->|"read-only"| W
     GWS -->|"read-only"| W
@@ -76,8 +77,8 @@ flowchart LR
     W --> R
     R --> BIN
     W --> CA
-    AI["Optional AI reader<br/>(only with client approval)"] -.-> CA
-    BIN --> REV["Reviewer approves"]
+    AI["Optional<br/>AI reader<br/>(only with<br/>client<br/>approval)"] -.-> CA
+    BIN --> REV["Reviewer<br/>approves"]
     CA --> REV
 ```
 
