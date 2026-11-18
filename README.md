@@ -29,6 +29,10 @@ published here.
 | [Marineland Public Intelligence Platform](projects/marineland-public-intelligence-platform/README.md) | Email records search and production pipeline for public records requests at the Town of Marineland, FL | Contributor: designed and delivered the review-binder, de-duplication and reliability work on a core system built by Blue Dot Fund | Python, Microsoft Graph, AWS, MySQL, pytest | Used for the Town's public records requests in 2026 |
 | [Claude Code Skills for Small Service Businesses](projects/small-business-ai-skills/README.md) | Five reusable Claude Code skills that take a small service business from content discovery to finished videos and online lead capture | Designer of the workflows and rules; directed Claude Code to build the skills, scripts and templates, and reviewed every output | Claude Code skills, Python, ffmpeg, faster-whisper, Google Apps Script, GitHub Pages | Four skills used on a real engagement; one in development |
 
+Public code sample: [ijgb-pilot-discovery](https://github.com/wilshem/ijgb-pilot-discovery),
+a live client questionnaire built with HTML, JavaScript and Google Apps
+Script, with automated tests that run on every pull request.
+
 ## How I build
 
 I design the system, write the requirements and decide the security controls.

@@ -6,7 +6,8 @@
 
 A platform that lets a private business or non-profit search, organize and
 package its own email and records, and audit its contracts, while every
-client's data stays in its own isolated environment.
+client's data stays in its own isolated environment. Its features are
+offered as four products: Integrity, Continuity, Memory and Clarity.
 
 ## 1. Problem
 
