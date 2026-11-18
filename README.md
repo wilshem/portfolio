@@ -46,6 +46,12 @@ results, larger changes get an independent review before merge, and the
 products themselves follow the same rule: the software proposes, and a person
 approves anything that goes to a client or the public.
 
+I often run several AI coding agents in parallel, each on its own workstream
+in a separate working copy. I consolidate their status reports, check them
+against each other and route the next tasks. Every pull request runs the
+automated tests in continuous integration, and larger changes are verified
+independently by a different agent before they merge.
+
 What I bring is the system design, the judgment about what is safe and
 correct, the test and release discipline, and accountability for the result.
 The project pages state plainly which parts I built, which parts others
