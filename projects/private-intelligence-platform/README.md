@@ -2,7 +2,7 @@
 
 **Organization:** It Just Gets Better LLC
 **Period:** October 2026 to present
-**Status:** In development; pre-revenue
+**Status:** In development; pre-revenue; test environment
 
 A platform that lets a private business or non-profit search, organize and
 package its own email and records, and audit its contracts, while every
@@ -195,7 +195,7 @@ No appliance is deployed yet.
 
 - Built from first commit to its current feature set between October 18 and
   November 14, 2026: 624 commits under my account (the count described in
-  My role) and 136 merged pull requests.
+  My role) and 140+ merged pull requests in 27 days.
 - Contract key terms, measured on all 510 CUAD agreements (November 2026): 86.0%
   of the clauses lawyers marked were found (3,794 of 4,410), and 76.5% of
   reported passages were in contracts the lawyers had marked.

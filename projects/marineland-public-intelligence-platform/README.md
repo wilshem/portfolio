@@ -1,5 +1,6 @@
-# Marineland Public Intelligence Platform
+# Marineland Records Platform
 
+**Formal name:** Marineland Public Intelligence Platform
 **Organization:** Town of Marineland, Florida
 **Period:** 2026
 **Status:** Used for the Town's public records requests in 2026

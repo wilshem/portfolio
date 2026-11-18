@@ -3,7 +3,8 @@
 **Context:** content and lead-capture support for a local window and gutter
 cleaning company
 **Period:** 2026
-**Status:** four skills used on a real engagement; one in development
+**Status:** versioned library; four skills used on one client engagement;
+one draft
 
 Five reusable Claude Code skills that take a small service business from
 "here is my account and some videos I like" to finished short videos and a
@@ -42,7 +43,7 @@ for every client.
 flowchart LR
     IN["Owner's<br/>accounts,<br/>notes and<br/>reference<br/>videos"] --> CRR["Content<br/>reference<br/>review"]
     CRR -->|"audit and<br/>first-video<br/>pick"| SP["Shoot plan"]
-    CRR -.->|"formats and<br/>patterns"| MCP["Market and<br/>content plan<br/>(in<br/>development)"]
+    CRR -.->|"formats and<br/>patterns"| MCP["Market and<br/>content plan<br/>(draft)"]
     MCP -.->|"pillars and<br/>calendar"| SP
     SP -->|"shot list<br/>PDF"| SHOOT["Shoot day"]
     SHOOT -->|"raw footage"| FTE["Footage<br/>to edit"]
@@ -110,7 +111,7 @@ request, saves customer photos and emails the owner, with per-channel tracking
 and setup for a custom domain. It costs little to run and the owner keeps the
 data.
 
-### Market and content plan (in development)
+### Market and content plan (draft)
 
 Researches a local service market (industry trends, seasonal demand,
 competitors and buyers) and turns it into content pillars, a monthly calendar
@@ -152,16 +153,20 @@ planning repeatable across clients. It has not yet been used on a client.
   stand-in endpoint first, then the owner sends one live test from a phone.
   When studying another business's form, the agent stops before submitting,
   so no fake lead is ever sent.
+- **Versioned library:** each skill follows semantic versioning, with a
+  changelog and a documented change process. Automated validation checks
+  and tests run on every pull request to the library. I am currently its
+  only reviewer.
 
 ## 8. Results
 
 - Four skills (content reference review, shoot plan, footage to edit and
-  quote form launch) were used on a real engagement with a local window and
+  quote form launch) were used on one client engagement with a local window and
   gutter cleaning company.
 - The quote form was taken live for the client.
 - The work was generalized into five reusable skills, with the client's
   details removed, so it can be repeated for the next small business.
-- The market and content plan skill is in development and has not yet been
+- The market and content plan skill is a draft and has not yet been
   used on a client.
 
 ## 9. What I would build next
